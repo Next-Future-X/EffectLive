@@ -9,10 +9,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--直播-->
         <scene sceneID="1D1-zk-DA8">
             <objects>
                 <navigationController id="QGT-zj-i8B" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="直播" image="live-n" selectedImage="live-p" id="xTs-Fa-bcP"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="c2H-Hq-3sc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -23,12 +25,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nGD-Dg-xQ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-770" y="56"/>
+            <point key="canvasLocation" x="-2081" y="84"/>
         </scene>
-        <!--View Controller-->
+        <!--Live View Controller-->
         <scene sceneID="Gu7-0T-Fsu">
             <objects>
-                <viewController id="RRc-EV-CG2" sceneMemberID="viewController">
+                <viewController id="RRc-EV-CG2" customClass="ELLiveViewController" customModule="EffectLive" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ubd-ms-bNl"/>
                         <viewControllerLayoutGuide type="bottom" id="bWd-qT-5Vh"/>
@@ -42,7 +44,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e5q-ud-drf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-33" y="55"/>
+            <point key="canvasLocation" x="-1358" y="83"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="live-n" width="25" height="19"/>
+        <image name="live-p" width="25" height="19"/>
+    </resources>
 </document>

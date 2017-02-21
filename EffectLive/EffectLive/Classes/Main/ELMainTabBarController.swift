@@ -12,8 +12,8 @@ class ELMainTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        addChileders()
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,10 +21,14 @@ class ELMainTabBarController: UITabBarController {
         // Dispose of any resources that can be recreated.
     }
     
-    fileprivate func addChilederS() {
-        
+    fileprivate func addChileders() {
+        setUpChildController(name: "Live")
+        setUpChildController(name: "Rank")
+        setUpChildController(name: "Discovery")
+        setUpChildController(name: "Profile")
     }
     fileprivate func setUpChildController(name:String) {
-        
+        let navVC = UIStoryboard(name: name, bundle: nil).instantiateInitialViewController() ?? UINavigationController()
+        addChildViewController(navVC)
     }
 }
